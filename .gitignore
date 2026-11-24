@@ -1,0 +1,9 @@
+/target
+**/*.rs.bk
+*.pdb
+**/mutants.out*/
+
+# Analysis output from local runs
+*.h5
+
+.DS_Store

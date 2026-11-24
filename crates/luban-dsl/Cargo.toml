@@ -1,0 +1,12 @@
+[package]
+name = "luban-dsl"
+description = "Typst-math equation language for luban"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+typst-syntax.workspace = true
+thiserror.workspace = true

@@ -1,0 +1,25 @@
+[workspace]
+members = ["crates/*"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["S. Maitrey"]
+license = "MIT"
+repository = "https://github.com/PlanetesLAB/luban"
+
+[workspace.dependencies]
+luban-dsl = { path = "crates/luban-dsl" }
+luban-macros = { path = "crates/luban-macros" }
+
+# typst-syntax is pre-1.0 and changes its API between minor versions.
+typst-syntax = "=0.15.1"
+quote = "1.0.47"
+syn = "3.0.10"
+thiserror = "2.0.21"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
